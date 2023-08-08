@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  title = "";
   msg1 = 'Hello World';
   msg2 = `<h1>Hello World</h1>`;
   img = "https://avatars.githubusercontent.com/u/83948628?v=4";
@@ -20,5 +21,15 @@ export class AppComponent {
 
   giao(){
     alert('Giao');
+  }
+
+  currentStyles = {
+    'font-style':  true      ? 'italic' : 'normal',
+    'font-weight': true ? 'bold'   : 'normal',
+    'font-size':   true    ? '24px'   : '12px'
+  };
+
+  consle(info: any){
+    console.log(info);
   }
 }

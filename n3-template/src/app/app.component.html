@@ -69,4 +69,12 @@
 <!-- 条件样式 -->
 <button [style.color]="true ? 'red': 'green'">Red</button>
 <button [style.font-size.em]="true ? 3 : 1" >Big</button>
+
+<div [ngStyle]="currentStyles">
+  This div is initially italic, normal weight, and extra large (24px).
+</div>
+
+<input #abc type="text"/>
+<button (click)="consle(abc.value)">点击</button>
+
 <router-outlet></router-outlet>
