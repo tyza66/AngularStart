@@ -13,5 +13,6 @@
   - 使用@Input、@Output、public实现父子通信
 - N3：模板语法(数据绑定、属性绑定、表达式、事件处理、样式绑定)
   - {{}}、[]、()、*、[()]
+  - NgClass、NgStyle、NgModel、NgIf、NgSwitch、NgFor
 
 By：tyza66
