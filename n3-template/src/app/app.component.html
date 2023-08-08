@@ -28,6 +28,23 @@
 <!-- 事件处理 -->
 <button (click)="giao()">点击</button>
 <p>{{ put }}</p>
+
+<!-- 双向绑定 -->
 <input type="text" [(ngModel)]="put"/>
+<!-- 复选框 -->
+<h3>单选框</h3>
+<input type="checkbox" [(ngModel)]="seen">
+<div class="box" *ngIf="seen">1</div>
+<!-- 单选框 -->
+<input type="radio" [value]="0" [(ngModel)]="gender"> 男
+<input type="radio" [value]="1" [(ngModel)]="gender"> 女
+<p>选中了：{{ gender }}</p>
+<!-- 下拉列表 -->
+<select [(ngModel)]="hobby">
+  <option [value]="0">吃饭</option>
+  <option [value]="1">睡觉</option>
+  <option [value]="2">打豆豆</option>
+</select>
+<p>选中的爱好：{{ hobby }}</p>
 
 <router-outlet></router-outlet>

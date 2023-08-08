@@ -14,6 +14,9 @@ export class AppComponent {
   isShow = false;
   num = 3;
   put = '';
+  seen = true;
+  gender = 0;
+  hobby = 0;
 
   giao(){
     alert('Giao');
