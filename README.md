@@ -14,5 +14,6 @@
 - N3：模板语法(数据绑定、属性绑定、表达式、事件处理、样式绑定)
   - {{}}、[]、()、*、[()]
   - NgClass、NgStyle、NgModel、NgIf、NgSwitch、NgFor
+- N4：使用路由
 
 By：tyza66
