@@ -8,6 +8,7 @@
 
 ##### 目录
 - N1：新的开始Hello,World!
+- N2：试一试组件
 
 
 By：tyza66
