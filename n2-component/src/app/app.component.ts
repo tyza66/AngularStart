@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -19,4 +19,10 @@ export class AppComponent {
     }
     console.log(this.num);
   }
+
+  say(info:any){
+    console.log(info);
+  }
+
+  //还有一种极为不建议的父组件访问子组件的方法@ViewChild
 }

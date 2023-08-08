@@ -18,4 +18,11 @@ export class MycomponentComponent {
     // 向父组件传递数据
     this.onVoted.emit(front);
   }
+
+
+  //父组件可以直接访问的public成员
+  public giao = "giao1";
+  public saygiao(){
+    console.log("giao2");
+  }
 }
