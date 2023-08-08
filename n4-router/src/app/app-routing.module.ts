@@ -22,7 +22,7 @@ const routes: Routes = [
   },
   {
     //还可以定义动态路由，给页面传参
-    path: 'c3:id',
+    path: 'c3/:id',
     component: C3Component
   }
 ];
