@@ -10,7 +10,9 @@
 <style>
   
 </style>
-<!-- 创建了一个自定义的组件 -->
-<app-mycomponent [hello]="hello" [world]="world"></app-mycomponent>
+<!-- 用来显示数量 -->
+<p>数量 {{num}}</p>
+<!-- 创建了一个自定义的组件 这里前俩是父给子的参数 第三个参数是子调用父方法 -->
+<app-mycomponent [hello]="hello" [world]="world" (onVoted)="onVoted($event)"></app-mycomponent>
 
 <router-outlet></router-outlet>
