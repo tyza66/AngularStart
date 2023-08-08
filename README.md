@@ -12,8 +12,6 @@
   - 使用ng generate component xyz命令快速创建新的组件
   - 使用@Input、@Output、public实现父子通信
 - N3：模板语法(数据绑定、属性绑定、表达式、事件处理、样式绑定)
-  - {{}}
-  - []
-  - ()
+  - {{}}、[]、()、*
 
 By：tyza66

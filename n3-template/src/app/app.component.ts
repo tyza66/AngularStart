@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'n3-template';
+  msg1 = 'Hello World';
+  msg2 = `<h1>Hello World</h1>`;
+  img = "https://avatars.githubusercontent.com/u/83948628?v=4";
+  isDisabled = true;
 }
