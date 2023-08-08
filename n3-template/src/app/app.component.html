@@ -1,11 +1,33 @@
+<!-- 参数模板 -->
 <p>{{msg1}}</p>
 <p [innerHTML]="msg2"></p>
 
-<img [src]="img"/><br/>
-
+<!-- 样式模板 -->
+<img [src]="img" /><br />
 <button [disabled]="isDisabled">无效按钮</button>
 
+<!-- js表达式 -->
 <!-- 如果 isButtonDisabled 的值是 null、undefined 或 false，则 disabled 特性甚至不会被包含在渲染出来的 <button> 元素中 -->
 <p>{{isDisabled?"giao1":"giao2"}}</p>
+
+<!-- 列表渲染 -->
+<ul>
+  <li *ngFor="let item of list;let i=index">{{i}}-{{item}}</li>
+</ul>
+
+<!-- 条件渲染 -->
+<p *ngIf="isShow">显示1</p>
+<!-- [ngIf]和ng-template搭配使用 -->
+<ng-template [ngIf]="isShow">显示2</ng-template>
+<div [ngSwitch]="num">
+  <div *ngSwitchCase="1">1</div>
+  <div *ngSwitchCase="2">2</div>
+  <div *ngSwitchDefault>other</div>
+</div>
+
+<!-- 事件处理 -->
+<button (click)="giao()">点击</button>
+<p>{{ put }}</p>
+<input type="text" [(ngModel)]="put"/>
 
 <router-outlet></router-outlet>
