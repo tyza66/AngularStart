@@ -1,3 +1,16 @@
+<style>
+  .red{
+    color: red;
+    width: 20px;
+    height: 20px;
+  }
+  .blue{
+    color: blue;
+    width: 20px;
+    height: 20px;
+  }
+</style>
+
 <!-- 参数模板 -->
 <p>{{msg1}}</p>
 <p [innerHTML]="msg2"></p>
@@ -47,4 +60,13 @@
 </select>
 <p>选中的爱好：{{ hobby }}</p>
 
+<!-- 条件类名 -->
+<div [ngClass]="{
+  'red':true,
+  'blue':false
+}">测试文本</div>
+
+<!-- 条件样式 -->
+<button [style.color]="true ? 'red': 'green'">Red</button>
+<button [style.font-size.em]="true ? 3 : 1" >Big</button>
 <router-outlet></router-outlet>
