@@ -25,4 +25,10 @@ export class AppComponent {
   }
 
   //还有一种极为不建议的父组件访问子组件的方法@ViewChild
+
+
+  //初始化声明周期钩子
+  ngOnInit(){
+    console.log("初始化生命周期钩子ngOnInit执行");
+  }
 }

@@ -8,9 +8,10 @@
 
 ##### 目录
 - N1：新的开始Hello,World!(创建项目、找到默认的模板进行修改、基于数据渲染页面)
-- N2：试一试组件(创建组件、父子通信、动态组件)
+- N2：试一试组件(创建组件、父子通信、动态组件、生命周期)
   - 使用ng generate component xyz命令快速创建新的组件
   - 使用@Input、@Output、public实现父子通信
+  - 使用Service 单例通信
 
 
 By：tyza66

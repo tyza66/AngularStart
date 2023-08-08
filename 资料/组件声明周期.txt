@@ -1,0 +1,17 @@
+ngOnChanges()
+ngOnInit()
+只执行一次
+ngDoCheck()
+ngAfterContentInit()
+只执行一次
+ngAfterContentChecked()
+ngAfterViewInit()
+只执行一次
+ngAfterViewChecked()
+ngOnDestroy()
+只执行一次
+Angular 一共暴露了8个“钩子”，构造函数不算。
+并没有组件或者指令会实现全部钩子。
+绿色的4个钩子可能会被执行很多次，紫色的只会执行一次。
+Content 和 View 相关的4个钩子只对组件有效，指令上不能使用。因为在新版本的 Angular 里面，指令不能带有 HTML 模板。指令没有自己的 UI，当然就没有 View 和 Content 相关的“钩子”了。
+请不要在生命周期钩子里面实现复杂的业务逻辑，尤其是那4个会被反复执行的钩子，否则一定会造成界面卡顿。
